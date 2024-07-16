@@ -168,7 +168,6 @@
 .lots__card-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: top;
   list-style: none;
   gap: 0px 25px;
 }
@@ -240,6 +239,7 @@
   letter-spacing: 0.13em;
   text-align: left;
 }
+
 .lots__look-more-link {
   display: block;
   margin: 30px 0px 0px 40px;
@@ -283,7 +283,6 @@
   top: 64px;
   left: 46.48px;
   gap: 0px;
-  opacity: 0px;
 }
 
 .about__title {
@@ -309,32 +308,26 @@
 }
 
 .about__text_amateur_lots_no_letter_spacing {
-  font-family: Raleway, sans-serif;
   letter-spacing: 0;
 }
 
 .about__text_amateur_lots_002_letter_spacing {
-  font-family: Raleway, sans-serif;
   letter-spacing: 0.02em;
 }
 
 .about__text_amateur_lots_negative_001_letter_spacing {
-  font-family: Raleway, sans-serif;
   letter-spacing: -0.01em;
 }
 
 .about__text_amateur_lots_003_letter_spacing {
-  font-family: Raleway, sans-serif;
   letter-spacing: 0.03em;
 }
 
 .about__text_lots_description_004_letter_spacing {
-  font-family: Raleway, sans-serif;
   letter-spacing: 0.04em;
 }
 
 .about__text_lots_description_001_letter_spacing {
-  font-family: Raleway, sans-serif;
   letter-spacing: 0.01em;
 }
 
@@ -348,7 +341,6 @@
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
-  align-items: top;
   justify-content: space-between;
   padding: 5px 50px 90px 50px;
 }
