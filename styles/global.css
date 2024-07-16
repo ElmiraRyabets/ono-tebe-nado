@@ -22,8 +22,7 @@ ul,
 ol,
 li,
 blockquote,
-span
-{
+span {
   margin: 0;
   padding: 0;
 }

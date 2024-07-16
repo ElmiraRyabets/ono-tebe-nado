@@ -127,7 +127,6 @@
   line-height: 28px;
   text-align: left;
   color: rgba(255, 255, 255);
-  font-family: Raleway, sans-serif;
   word-spacing: 18px;
   padding: 2px 0px 11px 40px;
 }
@@ -143,7 +142,6 @@
   text-transform: uppercase;
   border: 1px solid currentColor;
   white-space: nowrap;
-  text-align: center;
   padding: 12px 32px 11px 31px;
   margin: 1px 12px 12px 3px;
 }
