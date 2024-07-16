@@ -57,12 +57,12 @@
 .cover {
   position: relative;
   display: grid;
-  height: 757px;
+  min-height: 757px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  z-index: -1;
+  z-index: 0;
 }
 
 .overlay {
@@ -73,16 +73,16 @@
   top: 0px;
 }
 
-.cover__title,
-h1 {
-  padding: 160px 49px 0px 50px;
-  display: block;
+.cover__title {
+  padding: 172px 49px 75px 50px;
+  display: grid;
+  justify-items: center;
   width: 100%;
   position: relative;
   font-family: Raleway, sans-serif;
   font-size: 100px;
   font-weight: 700;
-  line-height: 125px;
+  line-height: 100px;
   letter-spacing: 0.3em;
   color: rgba(255, 255, 255);
   text-transform: uppercase;
@@ -90,30 +90,26 @@ h1 {
 }
 
 .aligned-text {
-  position: static;
+  justify-self: left;
   text-align: left;
-  margin: 0;
-  padding: 0;
 }
 
 .aligned-text_center {
-  position: static;
   text-align: center;
-  margin: 0;
-  padding: 0;
 }
 
 .aligned-text_right {
-  position: static;
   text-align: right;
-  margin: 0;
-  padding: 0;
+  justify-self: right;
 }
 
 .letter-spacing-extended {
   font-family: Raleway, sans-serif;
-  line-height: 110px;
   letter-spacing: 0.6em;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
 }
 
 .cover__description {
@@ -131,7 +127,7 @@ h1 {
   line-height: 28px;
   text-align: left;
   color: rgba(255, 255, 255);
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   word-spacing: 18px;
   padding: 2px 0px 11px 40px;
 }
@@ -145,7 +141,7 @@ h1 {
   text-align: center;
   color: rgba(255, 255, 255);
   text-transform: uppercase;
-  border: 1px solid rgba(255, 255, 255, 1);
+  border: 1px solid currentColor;
   white-space: nowrap;
   text-align: center;
   padding: 12px 32px 11px 31px;
@@ -155,7 +151,7 @@ h1 {
 .lots {
   padding: 180px 24px 0px;
   background-color: #ffffff;
-  z-index: -1;
+  z-index: 0;
 }
 
 .lots__heading {
@@ -171,7 +167,7 @@ h1 {
 
 .lots__card-list {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: top;
   list-style: none;
   gap: 0px 25px;
@@ -219,7 +215,7 @@ h1 {
   line-height: 26.4px;
   text-align: left;
   color: rgba(255, 255, 255);
-  z-index: 1;
+  z-index: 2;
   padding: 51px 40px 0px;
 }
 
@@ -230,7 +226,7 @@ h1 {
   font-weight: 400;
   line-height: 24px;
   text-align: left;
-  z-index: 1;
+  z-index: 2;
   color: rgba(255, 255, 255);
   padding: 0px 40px 48px;
   align-self: end;
@@ -312,61 +308,39 @@ h1 {
   grid-area: paragraph;
 }
 
-.about__text_paragraph_1_span_1 {
+.about__text_amateur_lots_no_letter_spacing {
   font-family: Raleway, sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: left;
+  letter-spacing: 0;
 }
 
-.about__text_paragraph_1_span_2 {
+.about__text_amateur_lots_002_letter_spacing {
   font-family: Raleway, sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
   letter-spacing: 0.02em;
-  text-align: left;
 }
 
-.about__text_paragraph_1_span_3 {
+.about__text_amateur_lots_negative_001_letter_spacing {
   font-family: Raleway, sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
   letter-spacing: -0.01em;
-  text-align: left;
 }
 
-.about__text_paragraph_1_span_4 {
+.about__text_amateur_lots_003_letter_spacing {
   font-family: Raleway, sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
   letter-spacing: 0.03em;
-  text-align: left;
 }
 
-.about__text_paragraph_2_span_1 {
+.about__text_lots_description_004_letter_spacing {
   font-family: Raleway, sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
   letter-spacing: 0.04em;
-  text-align: left;
 }
 
-.about__text_paragraph_2_span_2 {
+.about__text_lots_description_001_letter_spacing {
   font-family: Raleway, sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
   letter-spacing: 0.01em;
-  text-align: left;
 }
 
-.about__text_paragraph_1 {
-  padding-right: 9px;
+.about__text_amateur_lots {
+  padding-right: 30px;
+  margin-bottom : 1em;
 }
 
 .footer {
@@ -376,7 +350,7 @@ h1 {
   flex-wrap: nowrap;
   align-items: top;
   justify-content: space-between;
-  padding: 3px 50px 90px 50px;
+  padding: 5px 50px 90px 50px;
 }
 
 .footer__menu-list {
@@ -384,7 +358,7 @@ h1 {
 }
 
 .footer__menu-list-item {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.13px;
@@ -403,8 +377,6 @@ h1 {
   display: flex;
   flex-wrap: nowrap;
   column-gap: 48px;
-  margin-right: -48px;
-  margin-left: -37px;
   justify-content: space-evenly;
   text-align: right;
   list-style: none;
